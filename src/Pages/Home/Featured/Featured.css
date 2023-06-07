@@ -1,0 +1,16 @@
+.featured-item{
+    position: relative;
+    background: url('../../../assets/home/featured.jpg');
+    z-index: 1;
+    background-attachment: fixed;
+    
+}
+.featured-item::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+}
